@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+
+ <b>Actors in this Genre:</b>
+
+ 
+  <ul>
+
+   <li><% @genre.actors.each do |actor| %></li>
+
+   <li><%= actor.name %></li>
+
+
+
+   <% end %>
+
+ </ul>
+
+
+
+<%= link_to 'Edit', edit_genre_path(@genre) %> |
+<%= link_to 'Back', genres_path %>
