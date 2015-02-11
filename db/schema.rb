@@ -18,14 +18,14 @@ ActiveRecord::Schema.define(version: 20150210223052) do
     t.integer  "age"
     t.text     "bio"
     t.integer  "genre_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "genres", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "movies", force: :cascade do |t|
@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20150210223052) do
     t.text     "description"
     t.string   "rating"
     t.integer  "actor_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

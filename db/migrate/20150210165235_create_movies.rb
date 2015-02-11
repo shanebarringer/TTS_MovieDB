@@ -7,7 +7,7 @@ class CreateMovies < ActiveRecord::Migration
       t.integer :genre_id
       t.integer :actor_id
 
-      t.timestamps null: false
+      t.timestamps 
     end
   end
 end
